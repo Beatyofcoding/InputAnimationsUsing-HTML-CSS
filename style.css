@@ -45,3 +45,10 @@ body {
     border-bottom: 3px solid blueviolet;
     transform: translateX(-100%);
 }
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
