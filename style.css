@@ -52,7 +52,8 @@ body {
     left:0px;
     transition: all 0.3s ease;
 }
-.form input:focus + .label-name .content-name {
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
     transform: translateY(-150%);
     font-size: 14px;
     color: blueviolet;
