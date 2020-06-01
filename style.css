@@ -16,6 +16,7 @@ body {
     width: 50;
     position: relative;
     height: 50px;
+    overflow: hidden;
 }
 .form input {
     width: 100%;
@@ -45,6 +46,8 @@ body {
     width: 100%;
     border-bottom: 3px solid blueviolet;
     transform: translateX(-100%);
+        transition: transform 0.3s ease;
+
 }
 
 .content-name {
@@ -59,7 +62,8 @@ body {
     font-size: 14px;
     color: blueviolet;
 }
-.form input:focus .label-name::after, .form input:valid + .label-name::after{
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+.form input:focus .label-name::after,
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+    /* transition: transform 0.3s ease; */
 }
